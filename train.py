@@ -12,7 +12,18 @@ import keras
 import tensorflow as tf
 from keras.utils import FeatureSpace
 
-from main import load_info
+from general import load_info
+
+
+__all__ = (
+    'drop_other_diagnoses',
+    'diagnoses_to_digits',
+    'dataframe_to_dataset',
+    'prepare_datasets',
+    'build_feature_space',
+    'build_model',
+    'train'
+)
 
 
 def drop_other_diagnoses(
